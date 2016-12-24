@@ -9,11 +9,21 @@ $gray:                  color(black lightness(+33.5%)); /* #555 */
 $gray-light:            color(black lightness(+46.7%)); /* #777 */
 $gray-lighter:          color(black lightness(+93.5%)); /* #eee */
 
+$green_900: #004D40;
+$green_50: #E0F2F1;
+
+
+$yellow_900: #F57F17;
+$yellow_50: #FFFDE7 ;
+
 /*
  * Typography
  * ========================================================================== */
 
 $font-family-base:      'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+
+$light-font: $green_50;
+$dark-font: #212121;
 
 /*
  * Layout
