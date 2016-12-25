@@ -55,7 +55,7 @@ class App extends Component {
 
   render() {
     return !this.props.error ? (
-      <div className="app">
+      <div className={s.root}>
         <Header />
         {this.props.children}
         <Feedback />

@@ -10,19 +10,22 @@
 @import '../variables.scss';
 
 .root {
-  background: #333;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  background: $dark-font;
+  height: 50px;
+  min-height: 50px;
+  color: $yellow_50;
 }
 
 .container {
   margin: 0 auto;
-  padding: 20px 15px;
   max-width: $max-content-width;
   text-align: center;
 }
 
 .text {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, .3);
 }
 
 .textMuted {

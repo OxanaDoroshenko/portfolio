@@ -9,7 +9,7 @@ html(class="no-js", lang="")
     link(rel="apple-touch-icon", href="apple-touch-icon.png")
     style#css!= css
   body
-    #app!= body
+    #app(class="app")!= body
     script(src=entry)
     script.
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

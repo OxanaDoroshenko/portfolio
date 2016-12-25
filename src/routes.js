@@ -26,10 +26,6 @@ const router = new Router(on => {
 
   on('/contact', async () => <ContactPage />);
 
-  on('/login', async () => <LoginPage />);
-
-  on('/register', async () => <RegisterPage />);
-
   on('*', async (state) => {
     const query = `/graphql?query={content(path:"${state.path}"){path,title,content,component}}`;
     const response = await fetch(query);

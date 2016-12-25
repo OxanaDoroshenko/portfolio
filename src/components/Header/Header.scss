@@ -12,30 +12,73 @@
 $brand-color: #61dafb;
 
 .root {
+  height: 60px;
+  min-height: 60px;
+  display: flex;
+  width: calc(100% - 30px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
   background: $green_900;
   color: #fff;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 20px 0;
-  max-width: $max-content-width;
+.first{
+  display: flex;
+  flex-basis: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+.second{
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+.third{
+  display: flex;
+  flex-basis: 40%;
+  justify-content: flex-end;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  color: $yellow_50;
+  flex: 1;
+  text-decoration: none;
+  font-size: 1.4em; /* ~28px */
 }
 
-.brand {
-  color: color($brand-color lightness(+10%));
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
+.self{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.data{
+  display: flex;
+  flex-basis: 220px;
+  justify-content: flex-end;
+  img{
+    margin-left: 20px;
+  }
+}
+
+.name{
+  font-size: 0.65em;
+  font-weight: 100;
+}
+
+.whoami{
+  font-size: 0.55em;
+  font-weight: bold;
 }
 
 .brandTxt {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
-.nav {
-  float: right;
-  margin-top: 6px;
-}
+
 
 .banner {
   text-align: center;
